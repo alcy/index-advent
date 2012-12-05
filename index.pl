@@ -53,6 +53,7 @@ $index = sub {
     my ( $content, $published, $updated, $url, $labels, $title ) =
       map ( $post->{$_},
       ( 'content', 'published', 'updated', 'url', 'labels', 'title' ) );
+    $title =~ s/^Day \d+\W+//;
     $es->index(
       index => "advent",
       type  => "sysadvent",
