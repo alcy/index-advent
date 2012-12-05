@@ -1,11 +1,9 @@
 use strict;
 use warnings;
 
-use HTML::Strip;
 use JSON::XS;
 use HTTP::Tiny;
 use ElasticSearch;
-use Data::Dumper::Perltidy;
 
 my $json   = JSON::XS->new;
 my $es     = ElasticSearch->new;
