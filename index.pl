@@ -26,7 +26,7 @@ $es->create_index(
       }
     }
   },
-  mappings => { sysadvent => { "_source" => { "excludes" => ["content", "lables", "updated"] } } }
+  mappings => { sysadvent => { "_source" => { "excludes" => ["content", "labels", "updated"] } } }
 );
 
 my $index;
@@ -60,7 +60,7 @@ $index = sub {
         'published' => $published,
         'updated'   => $updated,
         'url'       => $url,
-        'lables'    => $labels,
+        'labels'    => $labels,
         'title'     => $title
       }
     );
