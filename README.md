@@ -1,7 +1,7 @@
 The `index.pl` script indexes all sysadvent posts till now using elasticsearch, and uses the [Blogger API](https://developers.google.com/blogger/) to retrieve posts. So, you need an [API Key](https://developers.google.com/blogger/docs/3.0/using#APIKey) to access the api and set `$apikey` in the script. Only the url, title and publishing date are displayed, but you can search on all or selective fields.  
 Some example queries (edited out some metadata):
     
-    $ curl 'localhost:9200/advent/_search?q=lables:puppet&pretty=true'
+    $ curl 'localhost:9200/advent/_search?q=labels:puppet&pretty=true'
     {
     "hits": {
       "hits": [
